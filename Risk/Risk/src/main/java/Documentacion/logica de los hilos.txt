@@ -1,0 +1,35 @@
+Logica de los hilos 
+.wait Esperando a los demas jugadores 
+jugador anfitrion(inicia partida en servidor) avisa que comienza partida  notyfy
+
+distribuir tropas 
+he terminado .wait 
+notify jugador 1 ha terminado 
+.wait
+notify jugador 2 ha terminado 
+.wait
+notify jugador 3 ha terminado 
+
+
+jugador1 va a atacar notify (objetivo)
+jugador1 tiran dados simultaneamente 
+jugador2 tiran dados simultaneamente 
+resultado notyfy all (cada tirada)
+.wait p2 notyfy all jugador1 conquista brasil a jugador2 wait all  (resultado final)
+p1 seguir atacando notyfy p2/ pasar turno (.wait) 
+	
+jugador2 va a atacar notify (objetivo)
+jugador2 tiran dados simultaneamente 
+jugador1 tiran dados simultaneamente 
+resultado
+ .wait p1 notyfy all jugador2 conquista brasil a jugador1 wait all  
+p1 seguir atacando notyfy p2/ pasar turno (.wait) 
+
+
+bucle
+p2 mover  tropas notyfy next jugador 1 iniar reforzar wait 
+(final mover p2)notyfy p1 atacar 
+
+
+
+

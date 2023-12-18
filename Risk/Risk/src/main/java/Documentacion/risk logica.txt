@@ -1,0 +1,74 @@
+https://es.wikipedia.org/wiki/Risk
+
+
+Servidor
+Espera de Conexiones: El servidor escucha conexiones de los clientes.
+Manejo de Jugadores: Gestiona la información sobre los jugadores conectados, sus acciones y el estado del juego.
+Distribución de Territorios: Cuando se inicia el juego, el servidor distribuye territorios entre los jugadores.
+Control de Turnos: Lleva un seguimiento de los turnos de los jugadores y notifica a los clientes cuando es su turno.
+Manejo de Acciones: Recibe las acciones de los jugadores (ataques, reforzar, etc.) y actualiza el estado del juego en consecuencia.
+Finalización del Juego: Verifica las condiciones de finalización del juego y declara al ganador.
+
+Cliente
+Conexión al Servidor: El cliente se conecta al servidor y espera instrucciones.
+Interfaz de Usuario: Proporciona una interfaz para que el jugador realice acciones como atacar, reforzar, etc.
+Recepción de Información: Recibe actualizaciones del servidor sobre el estado del juego, los cambios de turno, etc.
+Envío de Acciones: Envia las acciones del jugador al servidor para ser procesadas.
+Visualización del Tablero: Muestra el estado actual del tablero y los territorios poseídos por el jugador.
+Fin de Juego: Maneja la notificación y visualización del resultado cuando el juego termina.
+
+Crear partida (cliente-servidor) servidor.acept (activa cliente y servidor) hilos
+Unirse a la partida (cliente-servidor) Socket (activa cliente) hilos
+Salir
+
+Esperar mas jugadores 
+Comenzar ya
+Atras
+
+COMIENZA PARTIDA
+generarPaises
+Contar usuarios
+repartir paises
+repartir objetivos
+distribuir tropas 
+
+primer turno nose refuerzan empiezan directamente atacando 
+
+Bucle
+Jugador1 se refuerza
+calculo tropas 
+distribucion de tropas
+Jugador1 seleccionar pais desde el que va a atacar/ pasaturno 
+selecciona pais al que vas a atacar 
+atacar 3 dados atacante 2 dados defensor 
+Resultado
+Evaluacion condiciones de victoria 
+Recompensa/necesitas al menos 2 tropas para atacar
+Seguir atacando/pasarturno
+mover tropas/pasarturno
+
+
+Jugador2 se refuerza
+calculo tropas 
+distribucion de tropas
+Jugador1 seleccionar pais desde el que va a atacar/ pasaturno 
+selecciona pais al que vas a atacar 
+atacar 3 dados atacante 2 dados defensor 
+Resultado
+Seguir atacando/pasarturno
+Recompensa/necesitas al menos 2 tropas para atacar
+Seguir atacando/pasarturno
+mover tropas/pasarturno
+
+Jugador3 se refuerza
+calculo tropas 
+distribucion de tropas
+Jugador1 seleccionar pais desde el que va a atacar/ pasaturno 
+selecciona pais al que vas a atacar 
+atacar 3 dados atacante 2 dados defensor 
+Resultado
+Seguir atacando/pasarturno
+Recompensa/necesitas al menos 2 tropas para atacar
+Seguir atacando/pasarturno
+mover tropas/pasarturno
+

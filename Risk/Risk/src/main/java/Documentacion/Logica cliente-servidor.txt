@@ -1,0 +1,14 @@
+
+todas las aplicaciones tienen instalado el cliente y el servidor 
+Solo el que cree la partida anfitrion sera el que ejecute el servidor y su cliente a la misma vez 
+los demas solo ejecutaran cliente
+El servidor (El cual permite al jugador anfitrion crear partida server.accept 
+Espera a los demas jugarores (previamente el les habra informado de su ip mientra el se conecta como localhost)
+El servidor crea el hilo (liminar a 6) y lo deja a la espera asi hasta reunir los jugadores deseados
+Inicia partida jugador anfitrion en el servidor 
+servidor activa hilos (todos) para la distribucion de tropas por cada cliente 
+cuando jugador termina informa al servidor y dueme el hilo esperando a los demas
+
+comienza el juego y el server va despertando los hilos segun su turno y sus respectivos ataques/defensas
+Tambien despertando y volviendo a dormir para informar a los demas de los resultados de refuerzos ataques y movimientos de tropas
+

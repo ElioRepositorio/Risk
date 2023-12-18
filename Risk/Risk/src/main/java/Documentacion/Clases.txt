@@ -1,0 +1,25 @@
+GenerarCartas
+	Metodo CrearCartas return ArrayList<GenerarCartas> 
+	Metodo robarCarta (ArrayList<GenerarCartas> cartas) return objeto Carta
+
+GenerarObjetivos
+	Metodo CrearObjetivos return ArrayList<Objetivos> 
+	Metodo repartirObjetivos (ArrayList<GenerarObjetivos> Listaobjetivos) return objeto Objetivo
+
+GenerarPaises
+	Metodo CrearPaises return ArrayList<Paises> 
+	Metodo repartirPaises (ArrayList<GenerarCartas> cartas) return objeto Objetivo
+
+GenerarTropas
+	Metodo CrearTropas (int numeroJugadores, Jugador jugador) return int  ?afinar
+	Metodo void repartirTropas (int tropas, Jugador jugador) 
+
+Atacar 
+	Metodo seleccionaOrigenAtaque (String nombrePais)
+	Metodo seleccionaDestinoAtaque (String nombrePais)
+	Metodo ArrayList <int> tirarDados 
+	Metodo EvaluarResultado (ArrayList <int>) return ArrayList 
+
+
+
+
